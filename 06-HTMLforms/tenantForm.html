@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenancy Agreement Form</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Tenancy Agreement Form</h1>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <form action="">
+
+                <caption>Tenancy Agreement Form</caption>
+
+                <br/>
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <div>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" name="" id="fullname" placeholder="Firstname Lastname" aria-placeholder="Firstname Lastname" required aria-required="true">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="" id="dob" required aria-required="true">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="tenant-phone">Tenant's Phone:</label>
+                        <input type="tel" name="" id="tenant-phone" required placeholder="+2349078654321"  aria-placeholder="+2349078654321">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="tenant-email">Tenant's Email:</label>
+                        <input type="email" name="" id="tenant-email" required placeholder="tenant@test.com" aria-placeholder="tenant@test.com">
+                    </div>
+
+                    <br/>
+
+                    <div>
+                        <label for="tenant-occupation">Tenant's Occupation</label>
+                        <input type="text" name="" id="tenant-occupation" placeholder="Doctor" aria-placeholder="Doctor">
+                    </div>
+
+                </fieldset>
+                <br/>
+                <fieldset>
+
+                    <legend>Rental Information</legend>
+
+                    <div>
+                        <label for="occupants-number">Number of Occupants</label>
+                        <input type="number" name="" id="occupants-number" value="1" min="1" >
+                    </div>
+
+                    <br/>
+
+                    <div>
+                        <label for="purpose">Rental Purpose:</label>
+                        <input type="radio" id="residential" value="residential" name="purpose"><label for="residential">Residential</label>
+                        <input type="radio" id="business" value="business" name="purpose"><label for="business">Business</label>
+                    </div>
+
+                    <br/>
+                    
+                    <div>
+                        <label for="rental-type">Rental Types</label>
+                        <select name="" id="rental-type">
+                            <optgroup label="Business">
+                                <option value="open floor">Open Floor</option>
+                                <option value="warehouse">Warehouse</option>
+                            </optgroup>
+                            <optgroup label="Residential">
+                                <option value="studio apartment">Studio Apartment</option>
+                                <option value="mini flat">Mini Flat</option>
+                                <option value="2 bedroom flat">2 Bedroom Flat</option>
+                                <option value="3 bedroom flat">3 Bedroom Flat</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <br/>
+
+                    <div>
+                        <label for="pet">Do you own a pet?</label>
+                        <input type="radio" name="pet" id="yes" value="yes"><label for="yes">Yes</label>
+                        <input type="radio" name="pet" id="no" value="no" checked aria-checked="true"><label for="no">No</label>
+                    </div>
+
+                    <br/>
+
+                    <div>
+                        <label for="duration">Duration(Months)</label>
+                        <input type="number" name="" id="duration" min="6"  value="6">
+                    </div>
+
+                    <br/>
+
+                    <div>
+                        <label for="children">Number of Children</label>
+                        <input type="number" name="" id="children" min="0" value="0">
+                    </div>
+
+                </fieldset>
+                
+                <br>
+                <fieldset>
+                    <legend>Emergency Contact Information</legend>
+
+                    <div>
+                        <label for="emergency-name">Emergency Contact's Name:</label>
+                        <input type="text" name="" id="emergency-name" aria-placeholder="Firstname Lastname" placeholder="Firstname Lastname" required aria-required="true">
+                    </div>
+                    <br/>
+
+                    <div>
+                        <label for="emergency-phone">Emergency Contact's Phone:</label>
+                        <input type="tel" name="" id="emergency-phone" placeholder="+2349087654321" aria-placeholder="+2349087654321" required>
+                    </div>
+                    <br/>
+
+                    <div>
+                        <label for="relationship">Relationship With Tenant</label>
+                        <select name="" id="relationship">
+                            <option value="" disabled>Select relationship type</option>
+                            <option value="spouse">Spouse</option>
+                            <option value="parent">Parent</option>
+                            <option value="child">Child</option>
+                            <option value="friend">Friend</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <legend>Guarantor's Information</legend>
+                    
+                    <div>
+                        <label for="guarantor-name">Guarantor's Name:</label>
+                        <input type="text" id="guarantor-name" required aria-placeholder="Firstname Lastname" placeholder="Firstname Lastname" aria-required="true" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="guarantor-phone">Guarantor's Phone</label>
+                        <input type="text" name="" id="guarantor-phone" placeholder="+2349087654321" aria-placeholder="+2349087654321">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="guarantor-occupation">Guarantor's Occupation</label>
+                        <input type="text" name="" id="guarantor-occupation" placeholder="Doctor" aria-placeholder="Doctor" required>
+                    </div>
+
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                
+            </form>
+        </section>
+    </main>
+    <br/>
+    <br/>
+    <hr>
+    <footer>
+        <p>Designed by Amir & Aamira. &copy2023 All rights reserved.</p>
+    </footer>
+</body>
+</html>

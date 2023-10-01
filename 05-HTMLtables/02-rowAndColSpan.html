@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row and Col Span</title>
+</head>
+<body>
+    <header>
+        <h1>Row and Col Span</h1>
+    </header>
+    <main>
+        <section id="desc">
+            <dl>
+               <dt>rowspan</dt>
+                <dd>rowspan is an attribute instructing our browser to merge a set number of rows</dd>
+            </dl>
+            
+        </section>
+        <section id="_work">
+            <table border="1">
+                <caption<>Model Preparatory School Students record</caption>
+                <thead>
+                    <tr>
+                       <th scope="col" rowspan="2">S/N</th>
+                       <th scope="col" colspan="2">Fullname</th>
+                       <th scope="col" rowspan="2">Student ID</th>
+                       <th scope="col" rowspan="2">Student Email</th>
+                       <th scope="col" rowspan="2">Student Emergency Contact</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">First Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Shakiru</td>
+                        <td>Amir</td>
+                        <td>STUD001</td>
+                        <td>samir@modelprep.com</td>
+                        <td>+44 567 897</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Shakiru</td>
+                        <td>Aamira</td>
+                        <td>STUD002</td>
+                        <td>saamira@modelprep.com</td>
+                        <td>+44 567 897</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Shakiru</td>
+                        <td>Tunde</td>
+                        <td>STUD003</td>
+                        <td>stunde@modelprep.com</td>
+                        <td>+44 690 567</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Shakiru</td>
+                        <td>Sakirat</td>
+                        <td>STUD004</td>
+                        <td>ssakirat@modelprep.com</td>
+                        <td>+44 834 630</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td colspan="5">4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>

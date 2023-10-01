@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input in HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Input Types in HTML</h1>
+    </header>
+    <main>
+        <section id="description">
+            <dl>
+                <dt>form:</dt>
+                <dd>this element represents the beginning and end of your form in html</dd>
+                <dt>action:</dt>
+                <dd>the action attribute holds a value which is usually the URL (uniform resource locator) to the backend script which handles the form</dd>
+                <dt>method:</dt>
+                <dd>the method attrubute tells the form handler how to handle the form using the HTTP method described in the form.</dd>
+            </dl>
+        </section>
+        <section id="work">
+            <form action="" method="" >
+                <div>
+                    <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" required placeholder="Enter your full name" aria-placeholder="Enter your full name"/>
+                        
+                </div>
+                <br>
+                <div>
+                    <label for="usermail">Email:</label>
+                    <input type="email" id="usermail" required placeholder="Enter your email address" aria-placeholder="Enter your email address"/>
+                </div>
+                <br>
+                <div>
+                    <label for="user-password">Password:</label>
+                    <input type="password" id="user-password" required placeholder="Enter your password" aria-placeholder="Enter your password"/>
+                </div>
+                <br>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" min="4" max="12" value="4" aria-placeholder="Enter your age" >
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Gender</label>
+                    <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                </div>
+                <br>
+                <div>
+                    <label for="hobbies">What are your favourite hobbies</label>
+                    <input type="checkbox" id="football" name="hobbies" value="football">
+                    <label for="football">Football<label>
+                    <input type="checkbox" id="movies" name="hobbies" value="movies">
+                    <label for="movies">Movies<label>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading<label>
+                    <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+                    <label for="swimming">Swimming<label>
+                </div>
+                <br>
+                <div>
+                    <label for="fav-subject">Favourite Subject</label>
+                    <select id="fav-subject">
+                        <option value="" disabled aria-disabled="true">Select your favourite subject</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="english">English</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="geography">Geography</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="fav-cars">Favourite Car(s)</label>
+                    <select id="fav-cars" multiple>
+                        <option value="" disabled aria-disabled="true">Select your favourite car(s)</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="ford">Ford</option>
+                        <option value="volkswagen">Volkswagen</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="item">Select an item to buy</label>
+                    <select id="item">
+                        <optgroup label="China">
+                            <option value="processors">Processors</option>
+                            <option value="computer chips">Computer Chips</option>
+                        </optgroup>
+                        <optgroup label="India">
+                            <option value="routers">Routers</option>
+                            <option value="software">Software</option>
+                        </optgroup>
+                        <optgroup label="Germany">
+                            <option value="car engines">Car engines</option>
+                            <option value="industrial printer">Industrial Printer</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Choose from a list of mobile phones</label>
+                    <input type="text" list="phones" id="phone">
+                    <datalist id="phones">
+                        <option value="iphone"/>
+                        <option value="samsung"/>
+                        <option value="pixel"/>
+                        <option value="xiaomi"/>
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label for="description">Describe yourself:</label>
+                    <br>
+                    <textarea name="" id="description" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+             <br>
+             Join with this link https://meet.google.com/rwm-aqvw-xsx
+            <form action=""method="">
+                <fieldset>
+                    <legend>Amir & Aamira's Form</legend>
+                     <div>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" required placeholder="Insert your Last Name"/>
+                    </div>
+                    <br> 
+                    <div>
+                        <label for="usermail">Email:</label>
+                        <input type="email" id="usermail" required placeholder="Insert your email address" aria-placeholder="Insert your email address"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="user-password">Password:</label>
+                        <input type="password" id="user-password" required placeholder="Insert your password" aria-placeholder="Insert your password"/>
+                    </div>
+                    <br>
+                    <div> 
+                        <label for="height">Height (ft)</label>
+                        <input type="number" id="height" min="2.00" max="7.00" value="2.00" aria-placeholder="Insert your height"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="favourites">Do you have a favourite food?</label>
+                        <input type="radio" id="yes" name="favourites" value="yes" checked/>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="favourites" value="no"/>
+                        <label for="no">No</label>
+                        <input type="radio" id="maybe" name="favourites" value="maybe"/>
+                        <label for="maybe">Maybe</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="favourite-food">What are your favourite foods?</label>
+                        <input type="checkbox" id="normal-shawarma" name="favourite-food" value="normal-shawarma"/>
+                        <label for="normal-shawarma">Normal-sharwama</label>
+                        <input type="checkbox" id="shelby-sharwama" name="favourite-food" value="shelby-sharwama"/>
+                        <label for="shelby-sharwama">Shelby-sharwama</label>
+                        <input type="checkbox" id="snack-n-staxs" name="favourite-food" value="snack-n-staxs"/>
+                        <label for="snack-n-staxs">Snack-N-Staxs</label>          
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cities">Cities in the UK</label>
+                        <select id="cities">
+                            <option value="" disabled aria-disabled="true">Select your city in the UK</option>
+                            <option value="liverpool">Liverpool</option>
+                            <option value="london">London</option>
+                            <option value="somerset">Somerset</option>
+                        </select>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cities-in-countries">Cities in countries</label>
+                        <select id="cities-in-countries">
+                            <optgroup label="Italy">
+                                <option value="rome">Rome</option>
+                                <option value="milan">Milan</option>
+                            </optgroup>
+                            <optgroup label="Spain">
+                                <option value="madrid">Madrid</option>
+                                <option value="seville">Seville</option>
+                            </optgroup>    
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="browser">Choose from a list of browsers</label>
+                        <input type="text" list="browsers" id="browser">
+                        <datalist id="browsers"?>
+                            <option value="Chrome"/>
+                            <option value="Microsoft edge"/>
+                            <option value="mozilla firefox"/>
+                            <option value="yahoo"/>
+                        </datalist>
+                    </div>
+                    <br/>
+                    <br>
+                    
+                    <div>
+                        <label for="description">Describe yourself:</label>
+                        <textarea name="" id="description" cols="40" rows="20"></textarea>
+                    </div>
+                    <br/>
+                    <div>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                        <button type="submit">Submit</button>
+                    </div>     
+
+                    
+                </fieldset>
+               
+            </form>
+        
+                
+        </section>
+    </main>
+    <footer>
+        <p>Designed by Amir & Aamira. &copy;2023 All rights reservered.</p>
+    </footer>
+</body>
+</html>
