@@ -1,0 +1,79 @@
+/* Universal Selector: applies to all elements*/
+/*  
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} 
+*/
+
+
+/* Element Selector: Select HTML elements of a particular kind */
+body {
+    background-color: white;
+}
+
+a{
+    color: inherit;
+}
+
+/*Group selector: it is used to group two or more selectors*/
+/* this will get applied because it is more specific than the rule below it */
+header#heading, footer#foot {
+    color: white;
+    background-color: green;
+}
+
+header, footer {
+    color: whitesmoke !important;
+    background-color: #333;
+}
+
+/* ID Selector: is used to select one element that should have a different style compared to others of its kind*/
+
+nav#navigation{
+    background-color: navy;
+}
+
+section#hero{
+    background-color: rosybrown;
+    text-align: center;
+    padding: 20px
+}
+
+/* Class selector: is used to style elements belonging to a particular class */
+
+h2.section-title {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+h3.subtitle {
+    font-size: 22px;
+    text-decoration:underline;
+}
+
+/*Child Selector: is used to select an element that is directly inside a parent*/
+
+section#hero > h1 {
+    font-size: 48px
+}
+
+section#hero > a {
+    background-color: white;
+    text-align: left;
+    font-size: 20px;
+    padding:10px
+}
+
+/*Descendant selector: is used to select elements that are not direct children but descendants of an element*/
+
+section#hero span {
+    color: white;
+}
+
+section.about p {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
