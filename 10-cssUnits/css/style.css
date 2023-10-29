@@ -1,0 +1,127 @@
+
+/*  
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} 
+*/
+
+/*
+
+* CSS UNITS OF MEASUREMENTS 
+* 1. Absolute Units: e.g, Inches, metres, cm, mm, but the most popular one in web development is pixels (px). Pixels is 1/96th of an inches.
+
+*2.Relative units
+    a. em: Originally it referenced the width of capital letter 'M'. For font-size it means the parent element font-size multiplied by the value you have set. In relation to properties like width, height, margin and padding, the value of the em is the elements font-size multiplied by the em value you set for this element.
+    
+    b. rem: this is in relation to the root element (<html></html) font size. 
+
+    c. percentage %: this are values calculated as a percentage of the parent container
+    
+    d. vw: this simply means viewport width. 100vw means 100% of your viewport's width.
+
+    e. vh: this simply means viewport height: 1000vh means 100% of your viewport's height.
+
+    section > div > 3 divs > p
+    fs:10px > fs:2em(20px) > fs:2em(40px) > fs:2em(80px)
+
+    Ahead of our class read up on vw, vh and percentages
+*/
+html{
+    font-size: 10px;
+}
+
+body { 
+    background-color: hsl(583, 62%, 97%);
+    width: 100vw;
+}
+
+/*GENERAL CSS RULES*/
+
+a{
+    color: hsl(316, 75%, 45%);
+}
+
+p, a, address {
+    font-size: 1.8rem; /* 2 * 10px ( from the font-size set in html)*/
+}
+
+small {
+    font-size: 1.4rem;
+}
+
+footer  h2 {
+    font-size: 2.2rem;
+}
+
+/*END OF GENERAL CSS RULES*/
+header#heading {
+    width: 100%;
+}
+
+header#heading, footer#foot {
+    color: #ffffff;
+    background-color: rgba(25, 159, 25, 0.3);
+}
+
+nav#navigation{
+    background-color: hsla(92, 87%, 46%, 0.7);
+    width: 70%;
+}
+
+header#heading > figure {
+    width: 30%;
+    border: 1px solid black;
+}
+
+section#hero{
+    background-color: #f5c78f;
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+    height: 100vh;
+}
+
+h2.section-title {
+    color:rgb(19, 179, 240) ;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+h3.subtitle {
+    font-size: 22px;
+    text-decoration:underline;
+}
+
+section#hero > h1 {
+    font-size: 48px
+}
+
+section#hero > p {
+    font-size: 2em; /* 2 * 10px(font-size set in section#hero) = 20px*/
+    border: 1px solid black;
+    width: 10em; /* 10 * 20px (2em * 10px) = 200px*/
+    margin: 2em auto; /*top & bottom: 2 * 20px (2em * 20px) = 40px. left & right auto */
+}
+
+section#hero > a {
+    background-color: hwb(0 100% 0%);
+    text-align: left;
+    font-size: 20px;
+    padding:10px
+}
+
+section#hero span {
+    color: white;
+}
+
+section.about p {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+header#heading a, footer#foot a{
+    color: white;
+}

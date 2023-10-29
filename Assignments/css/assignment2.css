@@ -1,0 +1,11 @@
+body{
+    background-color: aliceblue;
+}
+header{
+    color: green;
+    background-color: hsl(236, 74%, 34%);
+}
+
+nav{
+    background-color: darkslateblue;
+}

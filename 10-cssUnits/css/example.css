@@ -1,0 +1,36 @@
+div.parent {
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #333;
+    color: #fff;
+}
+
+div.parent > div.child {
+    width: 50%;
+    height: 50%;
+}
+
+div.parent > div.child:first-child{
+    background-color: green;
+}
+
+div.parent > div.child:last-child{
+    background-color: red;
+}
+
+div.ngn{
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    display: flex;
+    background-color: green;
+}
+
+div.ngn > div.child{
+    width: 33.33%;
+}
+
+div.ngn > div.child:nth-child(2){
+    background-color: white;
+}
