@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+
+
+/*
+    font-family: determines the font applied to an element
+    text-decoration: this determines the decoration on a font, it can be any of underline, overline, line-through, none.
+    text-transform: this changes the case on a font to either uppercase, lowercase or capitalize.
+    text-align: determines the alignment of the font, such as left, right, center, justify, etc.
+    line-height: is used to control the space between two lines of text.
+    letter-spacing: controls the space between each letter of every word.
+    word-spacing: controls the space between words.
+    Font-size: this controls the size of the font.
+    Font-weight: controls the thickness of the font. 
+    Font-style: this sets the style of the font.
+    Font-family: this dictates the type of font you have on your screen.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: azure;
+    width: 100%; 
+    max-width: 1400px;
+    min-height: 100vh; /* it should go below 100% of your viewport height*/
+    margin: 0; /* 0 for all sides*/
+    margin: 0 auto; /* 0 for top & bottom, automatic for left and right*/
+    border-top: 10px solid black; /* border-width border-style border-color */
+    border-left: 5px dashed blue;
+    border-right: 5px double orange;
+    border-bottom: 10px dotted pink;
+    font-family: 'Roboto Slab', serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+input,button{
+    font: inherit;
+}
+
+h2, h3, small {
+    text-transform: capitalize;
+}
+
+h2, small{
+    text-align: center;
+    margin: 20px;
+}
+
+small{
+    font-size: 14px;
+    display: block;
+}
+
+
+header#heading{
+    background-color: red;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 80px; /* you can apply this if it will contain the header's children elements */
+    height: auto; /* apply  to automatically fit the content's height.*/
+    /* margin-top: 10px;
+    margin-bottom: 40px ;
+    margin-left: 40px;
+    margin-right: 40px; */
+    margin-bottom: 40px;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 30px 20px; /* top & bottom left & right */
+}
+
+div#logo{
+    margin-bottom: 20px;
+}
+
+nav li {
+    margin-bottom: 10px;
+    background-color: cadetblue;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+section#home{
+    width: 90%;
+    margin: 40px auto;
+    height: 100vh;
+    text-align: center;
+}
+
+section#home > h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+}
+
+section#home > p {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 20px;   
+}
+
+div.circle {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 40px auto;
+    border-radius: 50%;
+    border: 2px solid orange;
+    outline: 4px solid black;
+    outline-offset: 20px;
+}
+
+section.container{
+    width: 85%;
+    margin: 30px auto;
+    height: 90vh;
+    
+}
+
+h2.section-title{
+    text-decoration: underline;
+    font-size: 36px;
+}
+
+section#about > p {
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+h3.item-title{
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: 600;
+    text-transform: capitalize;
+    word-spacing: 5px
+}
+
+form#contact-form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+form#contact-form > button{
+    background-color: #333;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+

@@ -4,6 +4,16 @@
 * when it set to border-box, padding and margin values will be subtracted from the height and width you set, ensuring that you do not have any additional space allocated to your element.
 */
 
+/*
+    Five characteristic of every box in CSS
+    1. Width: is the horizontal span of your element.
+    2. Height: is the vertical span of your element
+    3. Margin: margin is the space that separates one element from another element
+    4. Padding:
+    5. Border: 
+
+*/
+
 
 *{
     margin: 0;
@@ -11,8 +21,21 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: azure;
+    width: 100%; 
+    max-width: 1400px;
+    min-height: 100vh; /* it should go below 100% of your viewport height*/
+    margin: 0; /* 0 for all sides*/
+    margin: 0 auto; /* 0 for top & bottom, automatic for left and right*/
+    border-top: 10px solid black; /* border-width border-style border-color */
+    border-left: 5px dashed blue;
+    border-right: 5px double orange;
+    border-bottom: 10px dotted pink;
 }
 
 a{
@@ -20,18 +43,55 @@ a{
 }
 
 header#heading{
+    background-color: red;
     width: 100%;
-    height: 120px;
-    background-color: #333;
-    color: white;
-    padding: 10px 30px; 
+    max-width: 1400px;
+    min-height: 80px; /* you can apply this if it will contain the header's children elements */
+    height: auto; /* apply  to automatically fit the content's height.*/
+    /* margin-top: 10px;
+    margin-bottom: 40px ;
+    margin-left: 40px;
+    margin-right: 40px; */
+    margin-bottom: 40px;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 30px 20px; /* top & bottom left & right */
+}
+
+div#logo{
+    margin-bottom: 20px;
+}
+
+nav li {
+    margin-bottom: 10px;
+    background-color: cadetblue;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
 section#home{
-    padding: 40px 60px;
-    height: 300px;
-    width: 80%;
-    background-color: black;
-    color: white;
+    width: 90%;
     margin: 40px auto;
+    height: 100vh;
+}
+
+div.circle {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 2px solid orange;
+    outline: 4px solid black;
+    outline-offset: 20px;
+}
+
+section.container{
+    width: 85%;
+    margin: 30px auto;
+    height: 90vh;
+    
 }
