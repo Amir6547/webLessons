@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+
+
+/*
+   
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: azure;
+    width: 100%; 
+    max-width: 1400px;
+    min-height: 100vh; /* it should go below 100% of your viewport height*/
+    margin: 0; /* 0 for all sides*/
+    margin: 0 auto; /* 0 for top & bottom, automatic for left and right*/
+    border-top: 10px solid black; /* border-width border-style border-color */
+    border-left: 5px dashed blue;
+    border-right: 5px double orange;
+    border-bottom: 10px dotted pink;
+    font-family: 'Roboto Slab', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+input,button{
+    font: inherit;
+}
+
+h2, h3, small {
+    text-transform: capitalize;
+}
+
+h2, small{
+    text-align: center;
+    margin: 20px;
+}
+
+small{
+    font-size: 14px;
+    display: block;
+}
+
+
+header#heading{
+    background-color: red;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 80px; /* you can apply this if it will contain the header's children elements */
+    height: auto; /* apply  to automatically fit the content's height.*/
+    /* margin-top: 10px;
+    margin-bottom: 40px ;
+    margin-left: 40px;
+    margin-right: 40px; */
+    margin-bottom: 40px;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 30px 20px; /* top & bottom left & right */
+}
+
+div#logo{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav li {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/*style nav-link class here*/
+header > nav a.nav-link {
+    background-color: aqua;
+    color:navy;
+}
+
+/*style nav-link class with active class here*/
+header > nav a.nav-link.active{
+    background-color:black;
+    color:whitesmoke; 
+}
+/*style nav-link class visited state here*/
+header > nav a.nav-link:visited{
+    background-color:blueviolet;
+    color:black;
+}
+
+/*style nav-link class hover & focus state here*/
+
+header > nav a.nav-link:is(:hover, :focus){
+    background-color:grey;
+    color:azure;
+}
+
+
+
+section#home{
+    width: 90%;
+    margin: 40px auto;
+    height: 100vh;
+    text-align: center;
+}
+
+section#home > h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+}
+
+section#home > p {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 20px;   
+}
+
+div.circle {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 40px auto;
+    border-radius: 50%;
+    border: 2px solid orange;
+    outline: 4px solid black;
+    outline-offset: 20px;
+}
+
+section.container{
+    width: 85%;
+    margin: 30px auto;
+    height: 90vh;
+    
+}
+
+h2.section-title{
+    text-decoration: underline;
+    font-size: 36px;
+}
+
+section#about > p {
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+h3.item-title{
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: 600;
+    text-transform: capitalize;
+    word-spacing: 5px
+}
+
+form#contact-form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+form#contact-form > button{
+    background-color: #000;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+form#contact-form > button:hover{
+    background-color: #333;
+    border: 1px solid red;
+}
+
+
+div.input-group > :is(input, textarea) {
+    width: 380px;
+    margin-bottom: 16px;
+}
+
+div.input-group > :is(input, textarea):hover {
+    border: 2px solid rgb(143, 112, 216);
+}
+
