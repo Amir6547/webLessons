@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgba(201, 240, 248, .2);
+    color: #03045e;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+small{
+    display: block;
+    font-size: 1.4rem;
+}
+
+
+header{
+    height: 50px;
+    background-color: #03045e;
+    box-shadow: 0px 3px 4px 2px #48cae4; /* h-offset v-offset blur spread color*/
+}
+
+header > div.logo{
+    color: #f5f5f5;
+    font-size: 3rem;
+    margin-left: 2rem;
+    padding-top: .5rem;
+}
+
+section.prices >:is(h1.section-title, small) {
+    text-align: center;
+}
+
+section.prices > h1.section-title{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    font-weight: 700;
+}
+
+div.price-card{
+    background-color: #03045e;
+    color: #f5f5f5;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 6px 2px #00b4d8;
+}
+
+div.price-card > h3 {
+    font-size: 2.5rem;
+    padding: 1rem 2rem; /* top/bottom left/right*/
+    
+}
+
+div.price-card > h3 {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    
+}
+
+div.price-card > h3 > span {
+    color: #00b4d8;
+    
+}
+div.price-card > h3 > span.price-tag {
+    font-size: 3.5rem;  
+}
+
+
+div.price-card > ul{
+    list-style: none;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+div.price-card > ul > li {
+    margin-bottom: 1rem;
+}
+
+footer{
+    text-align: center;
+}
+
+footer > p {
+    font-size: 1.8rem;
+}

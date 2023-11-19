@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/* 
+* Block level elements take up 100% of the device width. They often come with their own margin. E.g. div, p, h1...h6, section, etc. Block level elements they have margin, padding & width.
+* Inline elements just go with the flow, they only take up the space they require. E.g. img, small, span etc. Inline elements only have left and right margin. When you apply padding it will mostly overlap another element at the bottom and the top.
+* Inline-block is a display that allows inline elements to adopt the behaviour of block display elements
+
+* none: display none removes an element from the flow
+*/
+
+body{
+    font-family: "Agbalumo", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #333;
+    height: auto;
+    color: #ffff;
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+header > div {
+    display: inline-block;
+    width: 30%;
+}
+
+header > nav {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-left: auto;
+}
+
+header > nav > ul {
+    list-style-type:none ;
+}
+
+header > nav > ul > li:first-child{
+    margin-left: 0;   
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    margin-inline: 2rem;
+}
+
+header > nav > ul > li > a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+    color: #fca311;
+    text-decoration: none;
+}
+
+main{
+    margin: 4rem;
+    min-height: 80vh;
+}
+
+section.home{
+    text-align: center;
+}
+
+section.home > h1{
+    font-size: 4.8rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+section.home > p{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+section.home > p > span{
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 10rem; /*padding top & bottom will overlap another element.To solve this you can set display to inline-block*/
+}
+
+section.example-img > img{
+    display: block; /* I like to set my images to display: block to remove the space underneath it*/
+}
+section.example-img > p{
+    font-size: 1.8rem;
+}
+
+section.none{
+    font-size: 1.8rem;
+    display: none;
+}
+
+footer{
+    text-align: center;
+    font-size: 2rem;
+}

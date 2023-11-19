@@ -1,0 +1,28 @@
+section{
+    display: flow-root;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem
+}
+
+div.float-left{
+    height: 140px;
+    width: 140px;
+    background-color: indianred;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+
+div.float-right{
+    height: 140px;
+    width: 140px;
+    background-color: darkkhaki;
+    border-radius: 50%;
+    float: right;
+    margin-left: 10px;
+}
+/* 
+div.clear{
+    clear: both;
+} */
