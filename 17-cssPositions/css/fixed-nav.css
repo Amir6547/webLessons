@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    max-width: 1600px;
+    margin-inline: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+header{
+    height: 5rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    max-width: 1600px;
+    left: 0;
+    top: 0;
+}
+
+header > div.logo{
+    width: 30%;
+    display: inline-block;
+    font-size: 3rem;
+}
+
+header > nav {
+    display: inline-block;
+    width: 60%;
+}
+
+header > nav li {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+header > nav li > a {
+    color: white;
+    font-size: 2rem;
+}
+
+section{
+    height: 80vh;
+    margin: 5rem auto;    
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    scroll-margin-top: 5rem;
+}
+
+section#home {
+    text-align: center;
+}
+
+section#home > h1 {
+    font-size: 4.6rem;
+}
+section#home > p {
+    font-size: 2.4rem;
+}
+
+
+section > .section-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+section > small {
+    font-size: 1.6rem;
+}
+section > p {
+    font-size: 1.8rem;
+}
+
+section > ul {
+    font-size: 1.8rem;
+}
+a.go-top{
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+}
+
+a.go-top > i {
+    display: block;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+}

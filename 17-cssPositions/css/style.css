@@ -1,0 +1,116 @@
+/*
+Position in CSS is a property that allows determine where an element will be placed within the viewport. Some properties take an element out of the normal flow like absolute. The default position value is static
+
+Absolute positioning: it removes an element from the normal flow. THe element will have the normal location until you set either of these four attributes, which are; 
+1. Left 2. Right 3. Top 4. Bottom
+top is the distance between the top margin of the absolute positioned element and the top inner border of its container or the viewport
+bottom is the distance between the bottom margin of the absolute positioned element and the bottom inner border of its container or the viewport
+left is the distance between the left margin  of the absolute positioned element and the left inner border of its container or the viewport
+right is the distance between the right margin  of the absolute positioned element and the right inner border of its container or the viewport
+to determine how the element will be placed the absolute positioned element looks for the closest ancestor with a position relative. If it does not find one it used the viewport.
+
+Relative Positioning: it is similar to absolute position but you do not need to set the parent to position relative it assigned that to the parent by default. Even when you push the relatively positioned element away from its normal location no element comes in to replace it unlike absolutely positioned elements.
+
+Fixed Positioning: this alters the normal flow in reference to the viewport. Fixed elements will remain in the position you have set with either of your left, right, bottom, top while other elements will appear to be gliding underneath.
+
+Sticky Positioning: A sticky positioning is a new kind of positioning. A sticky positioning is a hybrid between relative and fixed positioning. The element stays in its normal flow until it reaches a point that has been defined. When the scroll goes beyond the containing element the sticky elements goes out of the viewport.
+
+Z-index: when you are altering the flow it is important to ensure that some elements are not hidden as a result of taking them out of the normal flow you can use z-index to control this.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    background-color: rgba(240, 255, 255, 0.6);
+    width: 100%;
+    max-width: 1600px;
+    margin-inline: auto;
+}
+
+
+header, footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding-block: 1rem;
+}
+
+
+header > div{
+    font-size: 3rem;
+    height: 5rem;
+}
+
+main{
+    min-height: 100vh;
+}
+
+section.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 3000px;
+    margin: 6rem auto;
+    border: 1px solid black;
+    position: relative; 
+}
+
+section.container > div.box{
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 3rem;
+}
+
+div.box.static {
+    background-color: black;
+    position: static;
+}
+div.box.absolute {
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+
+}
+div.box.relative {
+    background-color: orange;
+    position: relative;
+    top: 50px;
+    left: 300px;
+}
+div.box.fixed {
+    background-color: purple;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+div.box.sticky {
+    background-color: navy;
+    position: sticky;
+    top: 100px;
+    left: 200px;
+}
+
+div.box.element-hide{
+    background-color: beige;
+    color: black !important;
+    position: absolute;
+    left: -10000px; 
+}
+
+footer > small{
+    font-size: 1.4rem;
+}
+footer > p{
+    font-size: 1.8rem;
+}
