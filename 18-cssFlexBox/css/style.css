@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+    dark-blue: #003049;
+    red: #d62828;
+    orange: #f77f00;
+    yellow: #fcbf49;
+    white: #f1faee;
+*/
+/*General CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 1600px;
+    margin-inline: auto;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* End of General CSS */
+
+/* Utility Classes */
+.w-50{
+    width: 50%;
+}
+/* End of Utility Class */
+
+/* Header CSS */
+header.fixed-flex{
+    display: flex;
+    background-color: #003049;
+    color: #f1faee;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header > div.logo{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+}
+
+header > nav.header-nav > ul.link-flex {
+    display: flex;
+    gap: 2rem;
+}
+
+ul.link-flex  a {
+    color: #f1faee;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+}
+
+ul.link-flex a:is(:hover, :focus){
+    color: #d62828;
+}
+/* End Header CSS */
+
+/*Home Section CSS*/
+section#home{
+    display: flex;
+    height: 100vh; 
+    position: relative;
+}
+
+section#home > div.first{
+    background-color: #d62828;
+}
+
+section#home > div.second{
+    background-color: #f77f00;
+}
+
+section#home > div.hero-text{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.hero-text > h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: #f1faee;
+    text-transform: capitalize;
+}
+
+div.hero-text > p {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: #003049;
+    font-weight: 500;
+}
+/*End Home Section CSS*/
+

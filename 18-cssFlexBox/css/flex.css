@@ -1,0 +1,80 @@
+/*
+* Flex Box: Flex box or flexible box is a way of laying out your elements on a web page. It is more predictable than float. It also allows you create columns of equal height and vertical center elements. To create flex display you just have to set display: flex; rule.
+* gap: this property is used to set gaps between flex items.
+* flex-direction: by default flex-direction has a value of row. But you can set other values such as column, row-reverse and column-reverse. flex-direction controls the layout direction of your flex items whether they will be displayed side by side (row) or stacked (column). 
+* justify-content: is used for horizontal alignment of the flex-items.  it has values like flex-start (left align), flex-end (right align), center (horizontally to the center), other values space-around, space-between, space-evenly. 
+* align-items: controls vertical alignment. flex-start (aligns to top), center (vertically centers), flex-end (aligns to the bottom).
+* flex-wrap: this will ensure that elements are pushed to the new line as the container shrinks. it can be set to wrap or nowrap.
+* flex-basis: Specifies the size of an element before grow or shrink is applied. 
+* flex-grow: An integer (whole number) value specifying the growth factor, which determines how much the item will grow along the main axis to fill up unused space.
+* flex-shrink: An integer (whole number) value specifying the shrink factor, which determines how much the item will shrink along the main axis to fill up unused space.
+* order: An integer that moves a flex item to a specific position among its siblings, disregarding the source order. By default every element has an order of zero. Setting it to a negative value places it as first in line, while a value greater than one places it as the last item.
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    height: 5rem;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+section.flex-container{
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid black;
+    display: flex;
+    gap: 2rem;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+}
+
+div.flex-item{
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.flex-item:last-child{
+    order: -1;
+}
+
+div.box{
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100px; 
+    flex-shrink: 1;
+}
+
+div.box:nth-child(2){
+    flex-grow: 2;
+    flex-shrink: 2;
+}
