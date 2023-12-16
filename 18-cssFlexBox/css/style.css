@@ -26,10 +26,12 @@ body{
     max-width: 1600px;
     margin-inline: auto;
 }
+a,small, button, label, input{
+    display: block;
+}
 
 a{
     text-decoration: none;
-    display: block;
 }
 
 li{
@@ -41,6 +43,46 @@ li{
 /* Utility Classes */
 .w-50{
     width: 50%;
+}
+
+.container {
+    width: 90%;
+    margin: 8rem auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.section-title{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #003049;
+    letter-spacing: .1rem;
+}
+
+.subtitle{
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+    color: #f77f00;
+    word-spacing: .3rem;
+}
+
+.sub-heading{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    letter-spacing: .1rem;
+}
+.item-heading{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.item-text{
+    font-size: 1.6rem;
+    text-align: center;
 }
 /* End of Utility Class */
 
@@ -124,3 +166,69 @@ div.hero-text > p {
 }
 /*End Home Section CSS*/
 
+/* About Section CSS */
+section.about > div.about-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #003049;
+}
+
+div.history, div.vision-mission{
+    width: 48%;
+}
+
+div.vision{
+    margin-bottom: 2rem;
+}
+section.about p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+section.about ul {
+    font-size: 1.6rem;
+}
+/* End About Section CSS */
+
+/* Services Section CSS */
+div.service-flex{
+    display: flex;
+    gap: 2rem;
+}
+
+div.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #003049;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 4px #000;
+}
+
+div.service-item:is(:hover, :focus) {
+    background-color: #d62828;
+}
+div.service-item > i.bx{
+    font-size: 6rem;
+    color: #d62828;
+}
+
+div.service-item:is(:hover, :focus) >i.bx {
+    color: #f1faee;
+}
+
+div.service-item > h3.item-heading{
+    color: #f1faee;
+}
+
+div.service-item > h3.item-heading{
+    color: #f1faee;
+}
+
+div.service-item > p.item-text{
+    color: #f1faee;
+}
+/* End Services Section CSS */
