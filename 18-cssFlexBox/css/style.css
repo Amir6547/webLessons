@@ -41,8 +41,15 @@ li{
 /* End of General CSS */
 
 /* Utility Classes */
+.w-30{
+    width: 30%;
+}
 .w-50{
     width: 50%;
+}
+
+.w-70{
+    width: 70%
 }
 
 .container {
@@ -283,4 +290,94 @@ div.gallery-flex > img{
     width: 300px;
     height: auto;
 }
+
+div.gallery-flex > img:is(:hover, :focus){
+    box-shadow: 2px 5px 4px #000;
+}
+
 /* End Gallery Section CSS */
+
+/* Contact Section CSS */
+div.contact-flex{
+    display: flex;
+}
+
+div.contact-text{
+    background-color: #003049;
+    color: #f1faee;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    position: relative;
+    overflow: hidden;
+}
+
+div.text > h3{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+div.text > small {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+div.text > small > span {
+    color: #f77f00;
+    line-height: 1.8;
+    text-transform: capitalize;
+} 
+
+div.contact-number{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+div.contact-number:nth-child(odd){
+    margin-bottom: 2rem;
+}
+
+div.contact-number > h4{
+    font-size: 1.2rem;
+    color: rgba(224, 225, 221, .6);
+}
+
+div.contact-number > p{
+    font-size: 1.6rem
+}
+
+div.icons{
+    display: flex;
+    gap: 2rem
+}
+
+div.icons > i{
+    font-size: 4rem;
+}
+
+
+div.small-circle{
+    width: 10rem;
+    height: 10rem;
+    background: rgba(214, 40, 40, 0.6) ;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    bottom: 40px;
+    z-index: 2;
+}
+
+div.large-circle{
+    width: 30rem;
+    height: 30rem;
+    background: #f77f00;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15rem;
+    left: 50%;
+}
+
+/* End Contact Section CSS */
