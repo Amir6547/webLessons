@@ -1,0 +1,71 @@
+/*
+* Grid Box is a two dimensional layout that attempts to fix the inadequacies of flex-box. It allows us to determine how our elements will be displayed along the rows and columns. With Grid display you can also determine the sizes of elements by either setting a specific size or allowing automatic sizing to fit the content.
+
+* to enable grid display, you need to set your display to grid.
+
+* Grid Line: they make up the structure of your grid box. they are the horizontal or vertical that make up your grid box. If you have three columns you will have 4 vertical grid lines, if you have 3 rows you will have four horizontal grid lines.
+
+* Grid Track: this is the space between two adjascent gridlines. Horizontal grid track (row), vertical grid track (column).
+
+* Grid Cell: This where a row and column overlap.
+
+* Grid Area: this is made up of one or more grid cells
+
+* grid-auto-flow: it is used to control the flow of items in the grid. It can be set to row or column.
+
+* grid-template-columns or grid-template-rows: these allow you to determine the size of each row  and column.
+
+* gap: this can be used to create spaces between the grid items.
+
+*grid-column or grid-row: these two can be used to dictate the number of vertical or horizontal grid lines that a grid item should span.
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main.container {
+    display: grid;
+    /*grid-auto-flow: column; */
+    /* column-gap: 2rem;
+    row-gap: 2rem; */
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(2, 200px) 2fr;
+    grid-template-rows: 100px repeat(2, 300px) repeat(2, 100px); 
+    /* grid-auto-rows: minmax(150px, auto); */
+    
+}
+
+div.box{
+    background-color: orangered;
+    color: #fff;
+    font-size: 24px;
+    padding: 5px;
+}
+
+div.box:first-child{
+    background-color: orange;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4; */
+    grid-column: 1/3;
+    grid-row: 1/4;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    place-content: center;
+}

@@ -78,3 +78,13 @@ form.login-form > button{
 form.login-form > button:hover {
     border: 1px solid black;
 }
+
+form.login-form > a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #219ebc;
+}
+
+form.login-form > a:is(:hover, :focus){
+    color: #6C63FF;
+}

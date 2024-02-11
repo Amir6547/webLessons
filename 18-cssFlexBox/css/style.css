@@ -59,7 +59,22 @@ li{
     text-transform: capitalize;
     color: #003049;
     letter-spacing: .1rem;
+    position: relative;
 }
+
+.section-title::before, .section-title::after{
+    content: '';
+    display: inline-block;
+    height: 5px;
+    width: 50px;
+    background-color: #d62828;
+    position: relative;
+    bottom: 10px;
+}
+
+.section-title::before{right: 10px;}
+
+.section-title::after{ left: 10px; }
 
 .subtitle{
     font-size: 1.4rem;
@@ -121,6 +136,16 @@ ul.link-flex  a {
 
 ul.link-flex a:is(:hover, :focus){
     color: #d62828;
+}
+
+
+ul.link-flex a:hover::after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    margin-top: .5rem;
+    background-color: #f1faee;
 }
 /* End Header CSS */
 
@@ -270,6 +295,7 @@ div.features-item:is(:hover, :focus) >i.bx {
 }
 
 /* End Feature Section CSS */
+
 /* Gallery Section CSS */
 div.gallery-flex{
     display: flex;
@@ -284,3 +310,109 @@ div.gallery-flex > img{
     height: auto;
 }
 /* End Gallery Section CSS */
+
+/* Contact Section CSS */ 
+div.contact-flex{
+    display: flex;
+    width: 80%;
+    margin-inline: auto;
+}
+
+div.contact-text{
+    width: 40%;
+}
+
+form.contact-form{
+    width: 60%;
+}
+
+
+
+div.flex{
+    margin-bottom: 2rem;
+}
+
+div.flex > i {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #d62828;
+}
+
+div.flex > :is(a, address){
+    font-size: 1.6rem;
+    color: #000;
+}
+
+div.flex > :is(a:where(:hover, :focus)){
+    color: #f77f00
+}
+
+
+form.contact-form > div.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+div.input-group > label{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #003049;
+}
+
+div.input-group > :is(input, textarea){
+    width: 100%;
+    font: inherit;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: .75rem;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .3);
+}
+
+div.input-group > input{
+    height: 50px;
+}
+
+form.contact-form > button.btn.btn-dark{
+    background-color: #003049;
+    padding: .75rem 1rem;
+    color: #f1faee;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    width: 100px;
+    text-transform: capitalize;
+    border-radius: .75rem;
+    letter-spacing: .1rem;
+}
+
+
+form.contact-form > button.btn.btn-dark:is(:hover, :focus){
+    background-color: transparent;
+    color: #003049;
+    border: 2px solid #003049;
+}
+/* End Contact Section CSS */ 
+
+/* Footer CSS */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #003049;
+    padding-block: 3rem;
+}
+
+footer > small{
+    font-size: 1.4rem;
+    color: #f77f00;
+}
+
+footer > p {
+    font-size: 1.6rem;
+    color: #f1faee;
+}
+/* End Footer CSS*/
