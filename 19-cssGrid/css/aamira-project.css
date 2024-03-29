@@ -1,0 +1,19 @@
+body{
+    background-color: darkblue;
+}
+header{
+    height:5rem;
+    background-color: blue;
+    color: white;
+    position:fixed;
+    width:100%;
+    max width: 1600px;
+    left:0;
+    right:0;
+
+
+
+}
+main{
+    color: white;
+}

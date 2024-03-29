@@ -1,0 +1,24 @@
+body{
+    background-color: purple;
+}
+header{
+    color: rgb(247, 247, 247);
+    font-size: 20px;
+    text-align: center;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+main{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+main > section > h2{
+    color: white;
+}
+
+
+
