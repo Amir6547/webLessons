@@ -1,12 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+
 body{
     background-color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
+
 header{
     color: rgb(247, 247, 247);
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
 }
-button:hover{
+
+menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+
+li >  a.link-btn {
+    background-color: red;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    border-radius: 5px;
+}
+
+
+li >  a.link-btn:is(:hover, :focus){
     background-color: blue;
     color: white;
 }
@@ -15,6 +54,7 @@ main{
     color: white;
     font-size: 20px;
     text-align: center;
+    padding: 20px;
 }
 main > section > h2{
     color: white;

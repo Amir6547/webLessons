@@ -1,0 +1,115 @@
+/*
+Image Best Practices
+
+Set height and width in html without px just so your browser can allocated the space while loading.
+
+To make your image responsive set the width and make the height auto, your browser will automatically allocate the right height to the image.
+
+Except you want images to be displayed side by side, always set your images to block display.
+
+Background-color: this will act as a fall back if the background image fails to load.
+Background-image: this is used to specify the background image.
+Background-repeat: when an image is smaller than a container, it will most likely duplicate itself on the x-axis and y-axis to fill up the container. The background-repeat property can be used to prevent the default repetitive behaviour. 
+Background-size: this property specifies the size of the background image.
+Background-position: this is how the background is positioned along the x and y-axis.
+
+*/
+
+img.profile-pic{
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+div.profile-container{
+    height: 250px;
+    width: 250px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+
+img.profile-container{
+    width:200px;
+    height: 200px;
+    border: 2px solid red; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section.full{
+    min-height: 100dvh;
+    background-image: url(../images/bg-3.jpg);
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    place-content: center;
+}
+
+h1.full-heading{
+    font-size: 48px;
+    text-transform: capitalize;
+    text-shadow: 3px 2px 5px #fff;
+}
+
+p.full-text{
+    font-size: 24px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px #fff;
+}
+
+section.gradient{
+    background-image: linear-gradient(to left, green, pink);
+    height: 100dvh;
+}
+
+/*Parent container*/
+section.overlay-example{
+    min-height: 100dvh;
+    background-image: url(../images/bg-4.jpg);
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    margin: 80px auto;
+    position: relative;
+}
+
+section.overlay-example > div.container{
+    color: #fff;
+}
+
+/* Overlay */
+div.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100dvh;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Container containing text to display*/
+div.container {
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container h1 {
+    font-size: 48px;
+}
+
+div.container p {
+    font-size: 24px;
+}
