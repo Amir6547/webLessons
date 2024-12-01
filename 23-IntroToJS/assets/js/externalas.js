@@ -1,0 +1,1 @@
+window.alert("Aamira is a certified opp")
